@@ -25,13 +25,13 @@ function roll(){
     if((turn === "player1") && (((randomNumberForDice1 + randomNumberForDice2) == 6) || ((randomNumberForDice1 + randomNumberForDice2) == 7) || ((randomNumberForDice1 + randomNumberForDice2) == 8))){
         player1Score = 0;
         player1.innerHTML = player1Score;
-        turnParagraph.innerHTML ="2Player 2 turns";
+        turnParagraph.innerHTML ="Player 2 turns";
         knockOutEffect();
         turn = "player2";
     }else if((turn === "player2") && (((randomNumberForDice1 + randomNumberForDice2) == 6) || ((randomNumberForDice1 + randomNumberForDice2) == 7) || ((randomNumberForDice1 + randomNumberForDice2) == 8))){
         player2Score = 0;
         player2.innerHTML = player2Score;
-        turnParagraph.innerHTML ="1Player 1 turns";
+        turnParagraph.innerHTML ="Player 1 turns";
         knockOutEffect();
         turn = "player1";
     }else if(turn === "player1"){
