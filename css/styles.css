@@ -1,11 +1,19 @@
 body {
   cursor: url("../images/custom_cursor.svg"), auto;
   background-color: #393E46;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
 }
 .container {
   width: 70%;
   margin: auto;
   text-align: center;
+}
+
+#displayNone {
+  display: none;
 }
 
 .dice {
@@ -34,7 +42,13 @@ img {
   width: 70%;
 }
 
-button {
+a {
+  color: #4ECCA3;
+  text-decoration: none;
+  cursor: inherit;
+}
+
+button, .back-btn {
  font-family: 'Lobster', cursive;
  align-items: center;
  background-color: #4ECCA3;
@@ -46,6 +60,7 @@ button {
  font-size: 25px;
  font-weight: bolder;
  color: rgb(47, 35, 35);
+ cursor: inherit;
 }
 
 .knock-out-effect {
@@ -53,7 +68,11 @@ button {
   font-size: 7rem;
 }
 
-#restart{
+#mainMenu, #gameMenu{
+  display: none;
+}
+
+#restart {
   display: none;
 }
 
@@ -81,7 +100,59 @@ li:hover {
   /* cursor: pointer; */
 }
 
-a {
-  color: #4ECCA3;
-  text-decoration: none;
+
+
+#preLoader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.text {
+  clear: both;
+  color: #fff;
+  /* margin-bottom: 25px; */
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.loading {
+  width: 100% !important;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading .line-box {
+  padding: 2px;
+  width: 40%;
+  height: 20px;
+  border: 2px solid #4ECCA3;
+  border-radius: 20px;
+}
+
+.loading .line-box .line {
+  height: 20px;
+  border-radius: 20px;
+  background-color: #4ECCA3;
+  animation: loading 2s forwards cubic-bezier(0, 0, 0, 0);
+}
+
+@keyframes loading {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
 }

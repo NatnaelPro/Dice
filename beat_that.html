@@ -21,12 +21,14 @@
 
       <div>
         <button id="btn">ROLL</button>
+        <button><a href="index.html" class="back-btn">Back To Menu</a></button>
         <button id="restart">Restart</button>
       </div>
       
     </div>
   </body>
   <script>
+    let sound = new Audio('sound/main_sound.mp3');
     let header = document.getElementById("header");
     let player1Score = 0;
     let player2Score = 0;
@@ -36,6 +38,7 @@
     let turn = "player1";
     let turnParagraph = document.getElementById("turn-paragraph");
     btn.addEventListener('click', function(){
+        sound.play();
         roll();
     });
 

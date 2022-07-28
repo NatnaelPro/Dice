@@ -1,4 +1,5 @@
 let header = document.getElementById("header");
+let sound = new Audio('sound/main_sound.mp3');
 let player1Score = 0;
 let player2Score = 0;
 let chance = 20;
@@ -7,6 +8,7 @@ let restart = document.getElementById("restart");
 let turn = "player1";
 let turnParagraph = document.getElementById("turn-paragraph");
 btn.addEventListener('click', function(){
+    sound.play();
     roll();
 });
 function roll(){
