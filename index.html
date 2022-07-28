@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile_style.css">
     <title>Dicee</title>
 </head>
 <body>
@@ -12,19 +13,14 @@
         <h2>Loading...</h2>
         <div class="loading">
             <div class="line-box">
-                <div class="line">
-
-                </div>
+                <div class="line"></div>
             </div>
         </div>
     </div>
     
     <div class="container" id="mainMenu">
-        <h1 class="h1" id="header">Dicee Game</h1>
+        <h1 class="h1" id="header">Dice Game</h1>
         <ul> 
-            <!-- <li><a href="pig.html">Pig</a></li>
-            <li><a href="beat_that.html">Beat That</a></li>
-            <li><a href="knock_out.html">Knock Out</a></li> -->
             <li><a>Start</a></li>
             <li><a>About</a></li>
             <li><a>Settings</a></li>
@@ -33,7 +29,7 @@
     </div> 
 
     <div class="container" id="gameMenu">
-        <h1 class="h1" id="header">MENU</h1>
+        <h1 class="h1" id="header">DICE MENU</h1>
         <ul> 
             <li><a href="pig.html">Pig</a></li>
             <li><a href="beat_that.html">Beat That</a></li>
@@ -63,10 +59,6 @@
                 gameMenu.style.display = 'block';
                 preLoader.style.display = 'none';
             }, 2000);
-            //let timer = setTimeout(function(){
-                
-                // 
-            //}, 2000);
         });
         menu[1].addEventListener('click', function(){
             click_audio.play();
