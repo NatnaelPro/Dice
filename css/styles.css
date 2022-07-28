@@ -1,3 +1,7 @@
+body {
+  cursor: url("../images/custom_cursor.svg"), auto;
+  background-color: #393E46;
+}
 .container {
   width: 70%;
   margin: auto;
@@ -7,10 +11,6 @@
 .dice {
   text-align: center;
   display: inline-block;
-}
-
-body {
-  background-color: #393E46;
 }
 
 h1 {
@@ -23,6 +23,8 @@ h1 {
 }
 
 p {
+  margin-bottom: 10px;
+  margin-top: 0;
   font-size: 25px;
   color: #4ECCA3;
   font-family: 'Indie Flower', cursive;
@@ -53,4 +55,33 @@ button {
 
 #restart{
   display: none;
+}
+
+.player-container {
+  padding: 20px;
+}
+.player-container p{
+  display: inline;
+  padding-left: 30px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
+  font-size: 40px;
+  padding: 10px;
+  color: #4ECCA3;
+  transition: .3s;
+}
+
+li:hover {
+  font-weight: bolder;
+  /* cursor: pointer; */
+}
+
+a {
+  color: #4ECCA3;
+  text-decoration: none;
 }

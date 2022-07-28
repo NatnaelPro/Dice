@@ -4,7 +4,7 @@ let player2Score = 0;
 let chance = 20;
 let btn = document.getElementById("btn");
 let restart = document.getElementById("restart");
-let turn = "player1"
+let turn = "player1";
 let turnParagraph = document.getElementById("turn-paragraph");
 btn.addEventListener('click', function(){
     roll();
