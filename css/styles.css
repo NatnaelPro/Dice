@@ -173,3 +173,18 @@ h2 {
   width: 150px;
   margin: 10px;
 }
+.how-to-container{
+  /* background-color: red; */
+  width: 85%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.how-to-h1 {
+  font-size: 3rem;
+  margin: 30px;
+}
+
+.how-to-container p {
+  margin: 30px;
+}

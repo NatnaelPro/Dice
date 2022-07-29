@@ -42,8 +42,8 @@ let sound = new Audio('sound/main_sound.mp3');
       }
     }
     function checkWinner(){
-      if((player1Score >= 20) || (turn == "player1" && newScoreNumber >= 20) || (turn == "player1" && ((newScoreNumber + player1Score) >= 20))){
-        if(turn == "player1" && ((newScoreNumber + player1Score) >= 20)){
+      if((player1Score >= 100) || (turn == "player1" && newScoreNumber >= 100) || (turn == "player1" && ((newScoreNumber + player1Score) >= 100))){
+        if(turn == "player1" && ((newScoreNumber + player1Score) >= 100)){
           player1.innerHTML = (newScoreNumber + player1Score);
         }
         turnParagraph.style.display = "none";
@@ -51,8 +51,8 @@ let sound = new Audio('sound/main_sound.mp3');
         btn.style.display = 'none';
         restart.style.display = "inline-block";
         stop.style.display = 'none';
-      }else if((player2Score >= 20) || (turn == "player2" && newScoreNumber >= 20) || (turn == "player2" && ((newScoreNumber + player2Score) >= 20))){
-        if(turn == "player2" && ((newScoreNumber + player2Score) >= 20)){
+      }else if((player2Score >= 100) || (turn == "player2" && newScoreNumber >= 100) || (turn == "player2" && ((newScoreNumber + player2Score) >= 100))){
+        if(turn == "player2" && ((newScoreNumber + player2Score) >= 100)){
           player2.innerHTML = (newScoreNumber + player2Score);
         }
         turnParagraph.style.display = "none";
