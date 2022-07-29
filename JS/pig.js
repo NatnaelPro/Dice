@@ -1,4 +1,4 @@
-let sound = new Audio('../sound/main_sound.mp3');
+let sound = new Audio('sound/main_sound.mp3');
     let player1Score = 0;
     let player2Score = 0;
     let btn = document.getElementById("btn");
