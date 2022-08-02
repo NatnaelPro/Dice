@@ -64,6 +64,11 @@ That player will have to start over again at 0.
 
 ## Screenshot 
 
-![beat_that](images/menu.png)
+![beat_that](images/menu.png)  
 
+![beat_that](images/Pig.png)  
+
+![beat_that](images/beat_that.png)  
+
+![beat_that](images/knock_out.png)  
 
