@@ -61,3 +61,9 @@ Knock Out is another easy dice game that needs only two dice.
 To play Knock Out, every player rolls two dice. The dice are then added together. That sum is the score unless it was a 7. When a sum of seven is rolled, not only does the player not score for that round, but all of the players scores up to that point are knocked out leaving a score of 0.  
 
 That player will have to start over again at 0.  
+
+## Screenshot 
+
+![beat_that](images/menu.png)
+
+
