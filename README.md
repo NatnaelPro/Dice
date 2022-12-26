@@ -11,7 +11,7 @@ A dice is a small cube which has between one and six spots or numbers on its
 * CSS3
 * JavaScript
 
-## Lunch
+## Live Demo
 github page link : https://natnaelpro.github.io/Dice/
 
 ## General info
